@@ -21,7 +21,7 @@
 	        	<td><%= post.body %></td>
 	        	<td><%= link_to 'Show', post, class: "show_#{post.id}" %></td>
 	        	<td><%= link_to 'Edit', edit_post_path(post.id), class: "edit_#{post.id}" %></td>
-	        	<td><%= link_to 'Destroy', post, method: :delete, "data-confirm" => "Are you sure?" %></td>
+	        	<td><%= link_to 'Destroy', post, method: :delete, "data-confirm" => "Are you sure?", class: "destroy_#{post.id}" %></td>
 	        </tr>
 		<% end %>
     </tbody>
